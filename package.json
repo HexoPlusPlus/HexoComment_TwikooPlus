@@ -1,0 +1,28 @@
+{
+  "name": "HexoComment_TwikooPlus",
+  "version": "0.1.0",
+  "description": "Twikoo++",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ChenYFan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HexoPlusPlus/HexoComment_TwikooPlus.git"
+  },
+  "keywords": [
+    "Hexo",
+    "BackDashboard"
+  ],
+  "bugs": {
+    "url": "https://github.com/HexoPlusPlus/HexoComment_TwikooPlus/issues"
+  },
+  "homepage": "https://github.com/HexoPlusPlus/HexoComment_TwikooPlus#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-terser": "^2.0.1"
+  }
+}
