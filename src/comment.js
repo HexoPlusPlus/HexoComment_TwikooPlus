@@ -122,7 +122,6 @@ var ajax = ajaxObject();
 				}
 			}
 			document.getElementById("hpp_twikooplus_comment_list").innerHTML=`<p style="text-align:center">您正在使用TwikooPlus模式 | <strong><a href="javascript:use_twikoo('${envId}','${id}','${region}','${path_r}','${ver}')">强制使用原版</a></strong></p>`+document.getElementById("hpp_twikooplus_comment_list").innerHTML;
-			//console.log('it'+id)
 			if(count>0){
 			document.getElementById("hpp_twikooplus_comment_list").innerHTML+=`<button onclick="hpp_comment_loadmore('${id}','${domain}','${path_r}','${cdn}','${adminmail}','${friendmail}','${guestcolor}','${friendcolor}','${admincolor}',${before},'${envId}','${ver}','${region}')" class="hpp_comment_loadmore">还有${count}条评论</button><div class="hpp_twikooplus-footer">
   Powered by <a  href="https://hexoplusplus.js.org" target="_blank">HexoPlusPlus_TwikooPlus</a>${ver}</div>`
@@ -242,7 +241,7 @@ var ajax = ajaxObject();
 ajax.send();
 setTimeout(function(){ if(ajax.readyState != 4 | locationr=='CN' | locationr=='HK'){ajax.abort();document.getElementById(id).innerHTML=`<p style="text-align:center">适合使用原生Twikoo</p><div class="hpp_twikooplus-footer">
   Powered by <a  href="https://hexoplusplus.js.org" target="_blank">HexoPlusPlus_TwikooPlus</a>${ver}</div>`;use_twikoo(envId,id,region,path,ver)}else{document.getElementById(id).innerHTML=`<p style="text-align:center">适合使用TwikooPlus,正在获取评论列表...| <strong><a href="javascript:use_twikoo('${envId}','${id}','${region}','${path}','${ver}')">强制使用原版</a></strong></p></p><div class="hpp_twikooplus-footer">
-  Powered by <a  href="https://hexoplusplus.js.org" target="_blank">HexoPlusPlus_TwikooPlus</a>${ver}</div>`;use_twikooPlus(id,domain,path,cdn,adminmail,friendmail,guestcolor,friendcolor,admincolor)}}, timelimit);}
+  Powered by <a href="https://hexoplusplus.js.org" target="_blank">HexoPlusPlus_TwikooPlus</a>${ver}</div>`;use_twikooPlus(id,domain,path,cdn,adminmail,friendmail,guestcolor,friendcolor,admincolor,envId,region,ver)}}, timelimit);}
 else{
 	document.getElementById(id).innerHTML=`<p style="text-align:center">强制使用TwikooPlus,正在获取评论列表...| <strong><a href="javascript:use_twikoo('${envId}','${id}','${region}','${path}','${ver}')">强制使用原版</a></strong></p></p><div class="hpp_twikooplus-footer">
   Powered by <a  href="https://hexoplusplus.js.org" target="_blank">HexoPlusPlus_TwikooPlus</a>${ver}</div>`;use_twikooPlus(id,domain,path,cdn,adminmail,friendmail,guestcolor,friendcolor,admincolor,envId,region,ver)
